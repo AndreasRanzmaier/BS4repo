@@ -3,8 +3,9 @@ Installation
 1. Xamp Download 
     - wegen php
 2. mysql workbench 
-    - 
+    - wichtig, den ganzen installer mit mySql ansich auswählen
 3. vs code 
     - vs code extension php server download following this https://www.youtube.com/watch?v=Ry8tRRfxxf4
         - setting of systemvariable to php folder
-    - 
+    - intelephense
+        - Disable the built-in VSCode PHP Language Features. Go to Extensions. Search for @builtin php Disable PHP Language Features. Leave PHP Language Basics enabled for syntax highlighting.
