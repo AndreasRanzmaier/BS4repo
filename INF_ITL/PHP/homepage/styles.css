@@ -1,0 +1,36 @@
+#socialmedia {
+    text-decoration: none;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+#mejpg {
+    max-height: 60%;
+    max-width: 60%;
+    float: right;
+    border-radius: 15px;
+}
+
+.myFooter-bottom {
+    position: fixed;
+    float: left;
+    bottom: 0px;
+    width: 100%;
+    font-size: 70%;
+}
+
+
+
+.hr{margin:5px 0;}
+.accordion-group{margin-bottom:10px;border-radius:0;}
+.accordion-toggle{
+    background:rgb(248, 251, 252);
+
+}

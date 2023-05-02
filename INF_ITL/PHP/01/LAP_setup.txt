@@ -1,0 +1,10 @@
+Installation 
+
+1. Xamp Download 
+    - wegen php
+2. mysql workbench 
+    - 
+3. vs code 
+    - vs code extension php server download following this https://www.youtube.com/watch?v=Ry8tRRfxxf4
+        - setting of systemvariable to php folder
+    - 
