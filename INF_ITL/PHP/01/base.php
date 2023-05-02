@@ -16,21 +16,29 @@ function conn($host, $dbname, $user, $password)
     return new PDO('mysql:host=' . $host . ';dbname=' . $dbname, $user, $password);
 }
 
-function select($db)
+function select($db, $selectString)
 {
-    $select = $db->prepare("SELECT * FROM testdb.testtabelle;");
-
+    $select = $db->prepare($selectString);
     $select->execute();
     return $select->fetchAll(PDO::FETCH_ASSOC);
 }
-
-print_r(select($db));
 ?>
 
 <body>
     <P>SOME TEXT</P>
 
-
+    <table>
+        <tr>
+            <th>TestID</th>
+            <th>name</th>
+        </tr>
+        <?php
+        $tabelle = select($db, "SELECT * FROM testdb.testtabelle;");
+        foreach ($tabelle as $row) {
+            echo ("<tr><td>" . $row["TestID"] . "</td><td>" . $row["name"] . "</td></tr>");
+        }
+        ?>
+    </table>
     <!-- js librarys -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
