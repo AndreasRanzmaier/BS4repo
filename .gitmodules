@@ -1,3 +1,6 @@
 [submodule "shithead"]
 	path = shithead
 	url = https://shithead-bs2@dev.azure.com/shithead-bs2/shithead/_git/shithead
+[submodule "pp/shithead"]
+	path = pp/shithead
+	url = https://shithead-bs2@dev.azure.com/shithead-bs2/shithead/_git/shithead
