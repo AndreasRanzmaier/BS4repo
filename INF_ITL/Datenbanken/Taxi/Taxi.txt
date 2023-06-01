@@ -1,4 +1,0 @@
-Taxi
-Ich nutze MySql Workbench zum estellen eines graphischen ERM's. 
-Es hat alle benötigten Features um ich bin damit am vertrautesten.
-
