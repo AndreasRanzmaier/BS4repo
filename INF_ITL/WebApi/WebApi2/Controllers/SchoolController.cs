@@ -4,7 +4,7 @@ using WebApi2.Model;
 
 namespace WebApi2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class SchoolController : ControllerBase
     {
