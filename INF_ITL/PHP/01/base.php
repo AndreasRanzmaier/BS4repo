@@ -13,7 +13,7 @@
 <!-- Database connection -->
 <?php
 //          servername   db-name   db-user db-password
-$db = conn("localhost", "TesadatDB", "root", "4724");
+$db = conn("localhost", "adresse", "root", "4724");
 function conn($host, $dbname, $user, $password)
 {
     return new PDO('mysql:host=' . $host . ';dbname=' . $dbname, $user, $password);
