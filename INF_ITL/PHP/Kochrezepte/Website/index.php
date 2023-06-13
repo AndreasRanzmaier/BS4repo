@@ -20,10 +20,10 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link" href="/page/suche_name.php">Rezepte nach Namen suchen</a>
+            <a class="nav-link" href="?seite=suche_name.php">Rezepte nach Namen suchen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="?seite=suche_datum">Rezepte nach Datum suchen</a>
+            <a class="nav-link" href="?seite=suche_datum.php">Rezepte nach Datum suchen</a>
           </li>
         </ul>
       </div>
@@ -37,10 +37,10 @@
       dbConnect();
       if (isset($_GET['seite'])) {
         switch ($_GET['seite']) {
-          case 'suche_name':
+          case 'suche_name.php':
             include 'page/suche_name.php';
             break;
-          case 'suche_datum':
+          case 'suche_datum.php':
             include 'page/suche_datum.php';
             break;
         }
