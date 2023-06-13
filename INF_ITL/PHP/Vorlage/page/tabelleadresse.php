@@ -17,7 +17,7 @@ try {
 }
 ?>
 
-<input type="text" id="myInput" onkeyup="myFunction('myInput', 'myTable' , 1)" placeholder="Search for Adress.." title="input">
+<input type="text" id="myInput" onkeyup="search('myInput', 'myTable' , 1)" placeholder="Search for Adress.." title="input">
 <center>
     <table id="myTable">
         <tr class="header">
@@ -58,7 +58,7 @@ try {
 }
 ?>
 
-<input type="text" id="myInput2" onkeyup="myFunction('myInput2', 'myTable2' , 0)" placeholder="Search for People." title="input">
+<input type="text" id="myInput2" onkeyup="search('myInput2', 'myTable2' , 0)" placeholder="Search for People." title="input">
 <center>
     <table id="myTable2">
         <tr class="header">
