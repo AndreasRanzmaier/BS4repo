@@ -1,15 +1,7 @@
 <?php
 $con;
-
-// @$db the database from which to operate
-// @$selectString the sql string (not just select though)
-function select($db, $selectString)
-{
-    $select = $db->prepare($selectString);
-    $select->execute();
-    return $select->fetchAll(PDO::FETCH_ASSOC);
-}
-
+// takes a query and a bind statements
+//
 function makeStatement($query, $executeArray = NULL)
 {
     global $con;
