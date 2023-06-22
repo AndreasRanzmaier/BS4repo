@@ -3,7 +3,7 @@
 $server = 'localhost'; // 3307 = MariaDB, 3306 oder keine Angabe = MySQL
 $user = 'root';
 $pwd = '4724';
-$db = 'arztpraxis';
+$db = 'rezept';
 
 try {
     $con = new PDO(
@@ -16,5 +16,3 @@ try {
 } catch (Exception $e) {
     echo 'Error - Verbindung: ' . $e->getCode() . ': ' . $e->getMessage() . '<br>';
 }
-
-// return $con;
