@@ -1,7 +1,7 @@
 <?php
 $con;
 // takes a query and a bind statements
-//
+// executes that query and return table
 function makeStatement($query, $executeArray = NULL)
 {
     global $con;

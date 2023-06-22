@@ -45,10 +45,18 @@
         if (isset($_POST['delete'])) {
             $id = $_POST['id'];
 
-            $query = "DELETE FROM contacts WHERE id = ?";
+            // Check if the ID exists before deleting
+            $query = "SELECT COUNT(*) FROM contacts WHERE id = ?";
             $bindParams = array($id);
+            $result = makeStatement($query, $bindParams);
 
-            makeStatement($query, $bindParams);
+            if ($result[0][0] > 0) {
+                $query = "DELETE FROM contacts WHERE id = ?";
+                $bindParams = array($id);
+                makeStatement($query, $bindParams);
+            } else {
+                echo "<div class='alert alert-danger'>ID $id does not exist.</div>";
+            }
         }
     }
 

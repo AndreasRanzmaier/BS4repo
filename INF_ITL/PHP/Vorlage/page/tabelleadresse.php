@@ -25,9 +25,10 @@ try {
             <th>Ort</th>
             <th>Straße</th>
         </tr>
-        <?php
-        foreach ($result as $row) : ?>
-            <tr>
+        <?php $rowNum = 0; ?>
+        <?php foreach ($result as $row) : ?>
+            <?php $rowNum++; ?>
+            <tr style="<?php if ($rowNum % 2 == 0) echo 'background-color: #f2f200;'; ?>">
                 <td><?php echo $row['PLZ']; ?></td>
                 <td><?php echo $row['Ort']; ?></td>
                 <td><?php echo $row['Strasse']; ?></td>
