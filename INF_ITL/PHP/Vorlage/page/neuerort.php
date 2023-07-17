@@ -51,13 +51,14 @@ if (isset($_POST['save'])) {
 <?php
 }
 echo '<h2>Alle vorhandenen Orte</h2>';
-$query = 'SELECT ort_id AS "ID", ort_name AS "Ort" FROM ort';
+$query = 'select ort_name from ort;';
+$result = makeStatement($query);
 ?>
 
 <table>
     <?php foreach ($result as $row) : ?>
         <tr>
-            <td><?php echo $row['ID']; ?></td>
+            <td><?php echo $row['ort_name']; ?></td>
         </tr>
     <?php endforeach; ?>
 </table>

@@ -56,9 +56,6 @@ if(isset($_POST['show'])) {
                          and ter_beginn > "'.date('Y-m-d H:i:s',strtotime($von)).'"
                          and ter_ende < "'.date('Y-m-d H:i:s',strtotime($bis)).'"';
         }
-
-        
-        
     }
 
     makeTable($query, null);
@@ -72,6 +69,7 @@ if(isset($_POST['show'])) {
         <br>
         <label>Geburtstag: </label>
         <input type="date" id="geb" name="geb" required>
+
         <h3 for="suche">Behandlungszeitraum</h3>
         <label>Zeitraum von: </label>
         <input type="date" id="von" name="von">

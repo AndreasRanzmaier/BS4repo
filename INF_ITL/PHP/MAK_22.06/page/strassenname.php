@@ -6,9 +6,19 @@ if (isset($_POST['save'])) {
     $strasseId = $_POST['strasseId'];
     $strasse = $_POST['strasseneu'];
     $updateStmt1 = 'update strasse set str_name = ? where str_id = ?';
-    $array1 = array($strasse, $strasseId);
-    $stmt = makeStatement($updateStmt1, $array1);
-    echo '<h3>Strasse wurde umbenannt</h3>';
+    try {
+        $array1 = array($strasse, $strasseId);
+        $stmt = makeStatement($updateStmt1, $array1);
+        echo '<h3>Strasse wurde umbenannt</h3>';
+    } catch (Exception $e) {
+        switch ($e->getCode()) {
+            case 23000:
+                echo '<h4>Der Straßenname existiert bereits!</h4>';
+                break;
+            default:
+                echo 'Error - Strasse: ' . $e->getCode() . ': ' . $e->getMessage() . '<br>';
+        }
+    }
 } else {
     // Formular anzeigen
 ?>

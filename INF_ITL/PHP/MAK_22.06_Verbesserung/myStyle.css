@@ -1,0 +1,94 @@
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td 
+{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th
+{
+    background-color: #0047ab;
+    color:white;
+}
+
+.table_card
+{
+    width: 80%;
+    border-radius:15px;
+    padding:45px;
+    -webkit-box-shadow: 10px 10px 49px -23px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 49px -23px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 49px -23px rgba(0,0,0,0.75);
+}
+
+/* Show it is fixed to the top */
+body 
+{
+    min-height: 75rem;
+    padding-top: 4.5rem;
+    padding:20px 20px;
+}
+  
+.results tr[visible='false'], .no-result
+{
+    display:none;
+}
+
+.results tr[visible='true']
+{
+    display:table-row;
+}
+
+.counter
+{
+    padding:8px; 
+    color:#ccc;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+#myInput 
+{
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#myTable
+{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#myTable th, #myTable td 
+{
+    text-align: left;
+    padding: 12px;
+}
+
+#myTable tr 
+{
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover 
+{
+    background-color: #f1f1f1;
+}
+  
